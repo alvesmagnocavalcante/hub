@@ -1,6 +1,3 @@
 Teste
-<<<<<<< HEAD
 Magno
 Teste
-=======
->>>>>>> 7b738845b7f4a40e02d8384483938a77c4567be7
