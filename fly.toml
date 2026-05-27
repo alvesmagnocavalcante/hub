@@ -3,10 +3,6 @@ primary_region = 'ams'
 
 [build]
 
-[mounts]
-  source = "vol_v3g9l6p6ygl28ew4"
-  destination = "/root"
-
 [http_service]
   internal_port = 80
   force_https = true
