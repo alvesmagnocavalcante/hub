@@ -1,13 +1,11 @@
-FROM lscr.io/linuxserver/webtop:alpine-mate
+FROM dorowu/ubuntu-desktop-lxde-vnc
 
-ENV PUID=1000
-ENV PGID=1000
-ENV TZ=America/Fortaleza
-ENV CUSTOM_USER=admin
+USER root
+
+ENV USER=admin
 ENV PASSWORD=admin
 
-EXPOSE 3000
-EXPOSE 3001
-EXPOSE 8001
+RUN mkdir -p /tmp/.X11-unix && \
+    chmod 1777 /tmp/.X11-unix
 
-VOLUME /config
+EXPOSE 80
