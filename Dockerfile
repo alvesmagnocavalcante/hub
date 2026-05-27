@@ -1,4 +1,4 @@
-FROM lscr.io/linuxserver/webtop:alpine-mate
+FROM lscr.io/linuxserver/webtop:alpine-xfce
 
 ENV PUID=1000
 ENV PGID=1000
