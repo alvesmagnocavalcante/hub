@@ -1,13 +1,6 @@
-FROM lscr.io/linuxserver/webtop:alpine-xfce
+FROM dorowu/ubuntu-desktop-lxde-vnc
 
-ENV PUID=1000
-ENV PGID=1000
-ENV TZ=America/Fortaleza
-ENV CUSTOM_USER=admin
+ENV USER=admin
 ENV PASSWORD=admin
 
-EXPOSE 3000
-EXPOSE 3001
-EXPOSE 8001
-
-VOLUME /config
+EXPOSE 80
